@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Duke">
+
+
+    <meta name="subtitle" content="care about your heart">
+
+
+
+
+<title>驯服数据，解救困兽 | Duke and Pearl&#39;s Life</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Honor God</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Honor God</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">驯服数据，解救困兽</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Duke</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">一月 31, 2023&nbsp;&nbsp;0:00:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/category/Privacy/">Privacy</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>主标题：驯服数据，解救困兽</p>
+<p>副标题：浅思互联网企业野蛮生长后期的数据治理</p>
+<p>思考者：字温 WeChat: PrivacyArchitect</p>
+<p>导  读</p>
+<p>很多企业随着发展变成了「数据困兽」。数据管理不是没有，但缺乏体系化、规范化和智能化。面对「自由型」发展起来的企业（如绝大多数互联网公司），数据治理比传统企业周期更长、难度更大。数据管理本应是数据安全与合规、隐私保护的基础建设，如今需要「被动补救」总归会有一些挑战。</p>
+<p>数据牢笼的六个铁面</p>
+<p>一、难以构建充分有效的数据发现系统</p>
+<p>随着业务快速增长，短时间内有大量数据存储容器被创建和填充数据。多个团队之间缺乏统筹，数据资产从产生伊始就缺乏标准化。导致在企业意识到数据资产管理不当带来的发展阻力和监管压力时，难以构建充分有效的数据发现系统。时间推移，数据资产散落在各个服务器、以各种形态存在，由于管理混乱，可能会导致部分数据资产的“失控/离线”。一旦新的系统漏洞出现，不在管控范围内的数据资产将面临巨大危险。</p>
+<p>二、数据冗余带来翻倍的数据处理成本</p>
+<p>除了数据泄露这个极度敏感的话题外，还会带来数据冗余的问题。当一个团队无法在组织内找到满足自己业务需求的数据时，他们则会创建新的数据，比如从用户那里收集、从外部购买或运行模型计算产生等等。数据冗余不仅在全局层面存在“未发现”数据资产时会产生，还会由于缺乏统一的“数据中央管理委员会”或不同业务团队的“信息壁垒”而导致。不同团队间的“恶性竞争”或“协作机制”都可能导致“信息不互通”。第三种可能的情况是，同一个业务团队需要的数据已经存在于企业中，但由于其数据结构过于复杂，理解成本高于重新创建的成本，因而业务团队转向构建新的数据收集系统。</p>
+<p>三、数据资产管理缺乏体系化与规范性</p>
+<p>有些组织尽管构建了数据管理系统，但缺乏完整有效的数据管理规范，或数据管理制度并未依托于系统而严格执行。常见的情况是，数据管理员与数据所有人被合并为同一个角色，数据管理员难以对数据访问请求做出正确的决策，从而过度宽松地进行授权。另一种情况是数据资产安全等级设定缺乏标准，根据数据管理员的个体认知自行选择，存在一定偏差，导致数据安全管理缺乏可靠性基础。</p>
+<p>四、人员流动带来的数据资产熵增</p>
+<p>数据作为企业重要的资产，应当有专人负责维护，包括数据正确性、安全性、备份与恢复以及访问（包括读取、修改和删除）的合理性。其中正确性需要遵循数据所有人即业务团队的标准，而访问合理性应当同时落实合规团队的意见。企业还面临着人员流动时数据资产未交接或交接不清带来的一系列难题。人员内部流动有主动活水和组织调整两种，这种情况会增加相关利益方的沟通成本。相比之下，人员离职所带来的数据资产问题更加恼人。</p>
+<p>五、二义性是数据安全与合规治理的拦路虎</p>
+<p>数据安全和合规治理的一个基础是对数据类型进行标准化和结构化。当某数据元素（即具有独立语义和价值的数据）的分类明确后，再通过数据分类分级体系决策其保护策略。其中一大难题是难以离清数据实质。同一路径下的字段存在二义性、字段名称缺乏自解释性、字段名称与值不匹配（定义域和值域无合理映射关系）等，都会给数据打标带来麻烦。</p>
+<p>六、缺少专业人员构建数据治理体系</p>
+<p>数据治理体系至少应当包括质量、成本、安全、合规等多个方面，其中质量是数据所服务的业务关注的核心内容，同时也可以是整个治理体系的主要管理者和运营者。成本效能、数据安全、数据合规等其他领域的需求应当有专门的团队来负责，并嵌入在整个治理体系之中。当前面临的情况是，安全与合规的需求越来越迫切，而某些数据治理体系还未开始构建或不完善，那么会导致数据合规治理项目中要建设基础的管理策略、流程和控制措施，合规需求只是其中的一部分。当然，这也是数据合规与隐私保护的一大特点，即其对复合型人才的强烈需要。</p>
+<p>下期，我们将继续讨论如何一一破除铜墙铁壁，通过构建数据治理体系将企业从牢笼中释放出来，让他重新焕发青春的光彩。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Duke</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://dukeandpearl.life/2023/01/31/Taming-the-Data-to-Free-the-Beast/">https://dukeandpearl.life/2023/01/31/Taming-the-Data-to-Free-the-Beast/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2021</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>GOD</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tag/Data-Governance/"># Data Governance</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2023/03/26/Cyberstalking-for-Privacy-Violations/">隐私侵害之网络追踪：人身追踪全过程解析与防范建议</a>
+            
+            
+            <a class="next" rel="next" href="/2020/04/17/seek-larger-things/">阅读笔记 > 《寻求更大的事》 保罗·区普</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>版权所有© 字温 | Duke.  Thanks to <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
